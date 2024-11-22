@@ -114,7 +114,7 @@ ul {
     width: 100%;
 }
 .main-container .profit{ 
-    gap: 50px;
+    gap: 100px;
     padding-top: 20px;
     justify-content: center;
     /* border: 1px solid red; */
@@ -659,7 +659,7 @@ ul {
                    
                 }
         .main-history .history-container .history {
-            gap: 170px;
+            gap: 150px;
             margin-bottom: 10px;
         }
 
