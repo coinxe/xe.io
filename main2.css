@@ -642,7 +642,7 @@ ul {
     }
     .table-container2 .crypto-table2 .table-layout1{
     padding-top: 30px;
-    gap: 140px;
+    gap: 150px;
     padding-left:40px; 
     border-bottom: 5px solid #691150;
     margin-top: 20px;
@@ -657,7 +657,7 @@ ul {
     border-bottom: 5px solid #691150;
 }
 .table-container2 .table-layout2 .coin2 img{
-    width: 50px;
+    width: 40px;
     margin: 15px 0 15px 15px;
 }
     
@@ -679,7 +679,7 @@ ul {
         }
                 
         .main-history .history-container .history {
-            gap: 120px;
+            gap: 70px;
             margin-bottom: 10px;
         }
     .main-user{
