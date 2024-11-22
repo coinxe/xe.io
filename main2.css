@@ -533,7 +533,7 @@ ul {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     font-size: 14px;
-    /* margin: 15px 15px; */
+    width: 350px;
     border: 1px solid #691150;
     /* padding: 10px 10px; */
     border-radius: 8px;
@@ -546,37 +546,37 @@ ul {
 }
 .crypto-table .table-layout .coin .price2 {
     display: inline-flex;
-    gap: 130px;
+    gap: 110px;
     padding-top: 15px;
 }
 .crypto-table .table-layout .coin .price3 {
     display: inline-flex;
-    gap: 170px;
+    gap: 150px;
     padding-top: 15px;
 }
 .crypto-table .table-layout .coin .price4 {
     display: inline-flex;
-    gap: 145px;
+    gap: 125px;
     padding-top: 15px;
 }
 .crypto-table .table-layout .coin .price5 {
     display: inline-flex;
-    gap: 150px;
+    gap: 130px;
     padding-top: 15px;
 }
 .crypto-table .table-layout .coin .price6{
     display: inline-flex;
-    gap: 130px;
+    gap: 110px;
     padding-top: 15px;
 }
 .crypto-table .table-layout .coin .price7 {
     display: inline-flex;
-    gap: 150px;
+    gap: 130px;
     padding-top: 15px;
 }
 .crypto-table .table-layout .coin .price8 {
     display: inline-flex;
-    gap: 160px;
+    gap: 140px;
     padding-top: 15px;
 }
 .home2 .start h4{
