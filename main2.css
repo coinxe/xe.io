@@ -142,7 +142,7 @@ ul {
 .table-container2 .crypto-table2 .table-layout1{
     padding-top: 30px;
     gap: 300px;
-    padding-left:60px; 
+    padding-left:40px; 
     border-bottom: 5px solid #691150;
     margin-top: 20px;
 }
@@ -640,14 +640,26 @@ ul {
                    
     }
     .table-container2 .crypto-table2 .table-layout1{
-        gap: 90px;
+    padding-top: 30px;
+    gap: 70px;
+    padding-left:40px; 
+    border-bottom: 5px solid #691150;
+    margin-top: 20px;
     }
+    
     table-container2 .crypto-table2 {
     width: 100%;
     background: var(--light-color);
-    border-radius: 15px;
     /* border-bottom: 5px solid #691150; */
     }
+    .table-container2 .table-layout2  .coin2{
+    border-bottom: 5px solid #691150;
+}
+.table-container2 .table-layout2 .coin2 img{
+    width: 30px;
+    margin: 15px 0 15px 15px;
+}
+    
     .table-container2 .crypto-table2 .table-layout1 h3:nth-child(3) {
         display: none;
         }
