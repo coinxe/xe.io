@@ -533,7 +533,7 @@ ul {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     font-size: 14px;
-    width: 300px;
+    width: 310px;
     border: 1px solid #691150;
     /* padding: 10px 10px; */
     border-radius: 8px;
@@ -556,12 +556,12 @@ ul {
 }
 .crypto-table .table-layout .coin .price4 {
     display: inline-flex;
-    gap: 75px;
+    gap: 65px;
     padding-top: 15px;
 }
 .crypto-table .table-layout .coin .price5 {
     display: inline-flex;
-    gap: 80px;
+    gap: 70px;
     padding-top: 15px;
 }
 .crypto-table .table-layout .coin .price6{
@@ -571,7 +571,7 @@ ul {
 }
 .crypto-table .table-layout .coin .price7 {
     display: inline-flex;
-    gap: 80px;
+    gap: 70px;
     padding-top: 15px;
 }
 .crypto-table .table-layout .coin .price8 {
