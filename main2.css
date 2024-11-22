@@ -635,13 +635,15 @@ ul {
         border-top-right-radius: 50% 20%;
         border-top: dashed #fff;
     }
+    .table-container2{
+       width: 100%;
+                   
+    }
     .table-container2 .crypto-table2 .table-layout1{
         gap: 90px;
-        margin-left: 50px;
     }
     table-container2 .crypto-table2 {
     width: 100%;
-    margin: auto;
     background: var(--light-color);
     border-radius: 15px;
     /* border-bottom: 5px solid #691150; */
@@ -662,10 +664,7 @@ ul {
         .footer .container-footer {
              padding-left: 0;
         }
-                .table-container2 .crypto-table2 {
-                    width: 100%;
-                   
-                }
+                
         .main-history .history-container .history {
             gap: 150px;
             margin-bottom: 10px;
