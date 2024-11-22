@@ -662,6 +662,9 @@ ul {
             gap: 150px;
             margin-bottom: 10px;
         }
+    .main-user{
+        justify-content: center;
+    }
 
 }
 @media (max-width: 500px) {
@@ -817,7 +820,7 @@ ul {
 
 /* history */
 .main-user{
-    margin: 70px;
+    /*margin: 70px;*/
     margin-top: 50px;
     margin-bottom: 20px;
    
@@ -826,7 +829,7 @@ ul {
     border-bottom: 2px solid #fa6d86;
     width: 300px;
     border-radius: 20px;
-   /* padding-left: 20px;*/
+    padding-left: 10px;
 }
 .main-user .user-container .user img{
     width: 50px;
