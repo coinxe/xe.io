@@ -114,7 +114,7 @@ ul {
     width: 100%;
 }
 .main-container .profit{ 
-    gap: 100px;
+   gap: 20px;
     padding-top: 20px;
     justify-content: center;
     /* border: 1px solid red; */
@@ -826,11 +826,12 @@ ul {
     border-bottom: 2px solid #fa6d86;
     width: 300px;
     border-radius: 20px;
-    padding-left: 20px;
+   /* padding-left: 20px;*/
 }
 .main-user .user-container .user img{
     width: 50px;
     height: 50px;
+    border: 1px solid #fa6d86;
     border-radius: 50px;
    
 }
