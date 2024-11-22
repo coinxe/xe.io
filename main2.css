@@ -106,21 +106,21 @@ ul {
     align-content: center;
 }
 .main-container .inside .total{
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .block{
     display: block;
     width: 100%;
 }
-.main-container .profit{ 
-   gap: 50px;
+.main-container .profit1 .profit{ 
+   gap: 70px;
     padding-top: 20px;
     justify-content: center;
     /* border: 1px solid red; */
     /* background: #2c0621; */
-    border-radius: 10px;
-    padding: 10px 20px;
+    /*border-radius: 10px;
+    padding: 10px 20px;*/
     margin: auto;
     justify-content: center;
     /* color: #fff; */
