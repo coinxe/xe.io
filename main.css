@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'outfit';
+    background: linear-gradient(#f4f4f4, #f4f4f4,#310825);
+}
+.nav-container{
+   padding-top: 30px;
+   padding-left: 50px;
+   background: #f0d8ef;
+   
+}
+.nav-container .logo {
+    color: #fa6d86;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.container {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* padding-top: 5px; */
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title h2 {
+    font-weight: 600px;
+    color:#fa6d86;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+    border: none;
+    width: 135px;
+    height: 5px;
+    background-color: #fa6d86;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.xe p{
+    color: #fa6d86;
+    padding-left: 50px;
+    font-weight: bold;
+}
+.contact-input {
+    width: 400px;
+    height: 50px;
+    border: 1px solid #6d5c83;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-input:focus {
+    border: 2px solid #691150;
+}
+
+.contact-input::placeholder {
+    color: #a9a9a9;
+}
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+}
+
+.contact-left button img {
+    height: 15px;
+}
+
+.contact-right img {
+    width: 500px;
+}
+
+.contact-right p {
+    background-color: #fff;
+    color: #691150;
+    font-size: 20px;
+    width: 600px;
+    border-radius: 10px;
+}
+
+@media (max-width:800px) {
+    .contact-left-title h2 {
+            font-weight: 500px;
+            font-size: 20px;
+        }
+    .contact-input {
+        width: 80vw;
+    }
+        .contact-left button {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            font-size: 15px;
+            font-weight: bold;
+            color: #fff;
+            gap: 10px;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(270deg, #ff994f, #fa6d86);
+        }
+    
+        .contact-left button img {
+            height: 10px;
+        }
+
+    .contact-right {
+        display: none;
+
+    }
+}
+

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xe-trader/withdraw</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="main2.css" />
+    <script src="https://kit.fontawesome.com/649aa51483.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <section class="allback">
+        <nav class="navbar">
+            <div class="container-nav">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./asset/LOGOO.jpg" alt="">
+                        <h3>xe-trader</h3>
+                    </a>
+                </div>
+
+                <div class="main-menu">
+                    <ul>
+                        <!-- <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">SignUP</a>
+                        </li> -->
+                        <li>
+                            <a class="btn" href="dashboard.html">
+                                <i class="fa-solid fa-square-poll-vertical"></i>Assets
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-light" href="history.html">
+                                <i class="fa-solid fa-clock-rotate-left"></i>History
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Hamburger-->
+
+                <button id="hamburger-button" class="hamburger-button">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </button>
+                <div class="mobile-menu">
+                    <ul>
+                        <!-- <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>-->
+                        <li>
+                            <a href="#">
+                                <!-- <i class="fa-solid fa-user"></i>SignUP -->
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-light" href="dashboard.html">
+                                <i class="fa-solid fa-square-poll-vertical"></i>Assets
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-light" href="history.html">
+                                <i class="fa-solid fa-clock-rotate-left"></i>History
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="main-user">
+                <div class="user-container">
+                    <div class="user flex text-center">
+                        <img src="./asset/waseem.jpg" alt="">
+                        <span>
+                            <h2 class="text-md">lar****@*****</h2>
+                            <span class="flex">
+                                <p class="text-sm">UID: 0878764</p>
+                                <p class="text-md deposit">verified</p>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="container">
+                <form method="" class="contact-left">
+                    <div class="contact-left-title">
+                        <h2 class="text-sm">Withdraw</h2>
+                        <hr>
+                    </div>
+                    <div class="xe">
+                        <p>Tether TRC20 | $1500min</p>
+                    </div>
+                    <!-- <input type="hidden" name="access_key" value="4b0daa92-f039-46e4-860a-400253fb98b6"> -->
+
+                    <!-- <input type="text" name="name" placeholder="Full Name" class="contact-input" required> -->
+
+                    <input type="text" name="address" placeholder="Your Wallet Address" id="address"
+                        class="contact-input" required>
+                    <input type="text" name="amount" class="contact-input" id="amount" placeholder="Amount" required>
+                    <!-- <input type="password" name="password" placeholder="Create Password" class="contact-input" required> -->
+                    <!-- <textarea name="message" placeholder="Your message" class="contact-input" required></textarea> -->
+                    <button type="submit" id="btn" onclick="saveData()" class="btn text-md">
+                        <i class="fa-solid fa-circle-minus"></i> Withdraw
+                    </button>
+                </form>
+                <div id="toastBox"></div>
+
+                <!-- <div class="contact-right">
+                    <img src="/GREASTACK/CONTACT/asset/right_img.png" alt="">
+
+                </div> -->
+            </div>
+        </main>
+
+
+        <!--Footer-->
+        <footer class="footer2 bg-light">
+            <div class="container-footer">
+                <section>
+                    <div class="flex button-btn">
+                        <ul class="flex">
+                            <li>
+                                <a class="btn btn-light" href="deposit.html">
+                                    <i class="fa-solid fa-circle-plus"></i>Deposit
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-light" href="withdraw.html">
+                                    <i class="fa-solid fa-circle-minus"></i>Withdraw
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </section>
+            </div>
+        </footer>
+    </section>
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        const Address = document.getElementById("address");
+        const Amount = document.getElementById("amount");
+        const btn = document.getElementById("btn");
+        // let address = "saleemtrd@gmail.com";
+        let setAmount = 6000;
+
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            if (Address.value.length >= 26 && Amount.value <= setAmount && Amount.value >= 1500) {
+                swal("", "Kindly Submit your Withdrawal Code!", "success");
+                setTimeout(function () {
+                    try {
+                        window.location.href = "getcode.html";
+                    } catch (error) {
+                        console.error("An error occurred while redirecting to the dashboard:", error);
+                        // Handle the error here, e.g., display an error message to the user
+                    }
+                }, 2000);
+
+            } else if (Address.value == "" && Amount.value == "") {
+                swal("", "Enter your wallet Address and Amount!", "error");
+
+            } else if (Address.value != "" && Amount.value > setAmount) {
+                swal("", "Insufficient Fund!", "error");
+
+            } else if (Address.value.length <= 26 && Amount.value != "") {
+                swal("", "Enter a valid wallet Address!", "error");
+
+            } else if (Address.value != "" && Amount.value <= 1500) {
+                swal("", "Enter Amount above $1500!", "error");
+
+            } else {
+                swal("", "Invalid Address or Amount!", "error");
+            }
+            Address.value == "";
+            Amount.value == "";
+        });
+
+
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
