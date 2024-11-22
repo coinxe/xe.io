@@ -556,12 +556,12 @@ ul {
 }
 .crypto-table .table-layout .coin .price4 {
     display: inline-flex;
-    gap: 65px;
+    gap: 75px;
     padding-top: 15px;
 }
 .crypto-table .table-layout .coin .price5 {
     display: inline-flex;
-    gap: 70px;
+    gap: 80px;
     padding-top: 15px;
 }
 .crypto-table .table-layout .coin .price6{
@@ -571,12 +571,12 @@ ul {
 }
 .crypto-table .table-layout .coin .price7 {
     display: inline-flex;
-    gap: 70px;
+    gap: 80px;
     padding-top: 15px;
 }
 .crypto-table .table-layout .coin .price8 {
     display: inline-flex;
-    gap: 90px;
+    gap: 85px;
     padding-top: 15px;
 }
 .home2 .start h4{
@@ -603,7 +603,7 @@ ul {
     padding-right: 70px;
 }
 .conmargin .margin {
-    /* width: 20px; */
+    width: 20px; 
     border: 1px solid #2c0621;
     background: #2c0621;
     border-radius: 30px;
