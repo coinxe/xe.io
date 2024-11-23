@@ -861,6 +861,7 @@ ul {
 
 .main-history {
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -884,12 +885,15 @@ ul {
     background-color: #fa6d86;
     border-radius: 10px;
     margin-bottom: 20px;
+    Margin-left: 20px;
 }
 .main-history .history-container h2 {
     font-weight: 600px;
     color: #fa6d86;
     font-size: 30px;
     margin-bottom: 5px;
+    margin-left: 20px;
+
 }
 .footer2{
     background: #f0d8ef;
