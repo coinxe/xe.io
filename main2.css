@@ -896,7 +896,7 @@ ul {
 
 }
 #main-deposit{
-    border: 2px solid red;
+    overflow: hidden;
     width: 95%;
     margin-left: 5px;
 }
