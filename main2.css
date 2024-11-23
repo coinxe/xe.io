@@ -648,7 +648,7 @@ ul {
     margin-top: 20px;
     }
     
-    table-container2 .crypto-table2 {
+    .table-container2 .crypto-table2 {
     width: 100%;
     background: var(--light-color);
     /* border-bottom: 5px solid #691150; */
@@ -896,6 +896,7 @@ ul {
 
 }
 #main-deposit{
+    border: 2px solid red;
     width: 95%;
     margin-left: 5px;
 }
