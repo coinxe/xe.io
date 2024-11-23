@@ -905,6 +905,7 @@ ul {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-left: 10px;
 }
 
 .heading {
@@ -916,7 +917,7 @@ ul {
 }
 
 .accordion {
-    max-width: 700px;
+    max-width: 500px;
     width: calc(100% - 20px);
 }
 
