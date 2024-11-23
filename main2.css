@@ -912,6 +912,10 @@ ul {
     overflow: hidden;
     bottom: 0;
 }
+.accordion {
+    width: 100%;
+    width: calc(100% - 20px);
+}
 
 
 .page__wrapper {
