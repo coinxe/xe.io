@@ -891,6 +891,20 @@ ul {
     font-size: 30px;
     margin-bottom: 5px;
 }
+.main-deposit .deposit-container h2 {
+    font-weight: 600px;
+    color: #fa6d86;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.main-deposit . deposit-container hr{
+    border: none;
+    width: 135px;
+    height: 5px;
+    background-color: #fa6d86;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
 .footer2{
     background: #f0d8ef;
     padding: 5px;
@@ -916,10 +930,7 @@ ul {
     padding: 0px 15px;
 }
 
-.accordion {
-    max-width: 500px;
-    width: calc(100% - 20px);
-}
+
 
 details {
     background-color: var(--light-color);
