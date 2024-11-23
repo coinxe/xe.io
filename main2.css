@@ -915,7 +915,9 @@ ul {
     border-radius: 10px;
     margin-bottom: 20px;
 }
-
+. navigation{
+    z-index: 100; 
+}
 .footer2{
     background: #f0d8ef;
     padding: 5px;
@@ -926,7 +928,6 @@ ul {
 .accordion {
     max-width: 700px;
     width: calc(100% - 20px);
-    z-index: -1; 
 }
 
 
