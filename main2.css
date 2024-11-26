@@ -116,27 +116,20 @@ ul {
 .main-container .profit1 .profit{ 
    gap: 70px;
     padding-top: 20px;
-    justify-content: center;
-    /* border: 1px solid red; */
-    /* background: #2c0621; */
-    /*border-radius: 10px;
-    padding: 10px 20px;*/
     margin: auto;
     justify-content: center;
-    /* color: #fff; */
+    
 }
 .main-container .profit1 {
     width: 100%;
     border-bottom: 5px solid #691150;
-    border-radius: 20px;
+    border-width: 2px;
 }
 
 .table-container2 .crypto-table2 {
     max-width: 1000px;
     margin: auto;
-    background: var(--light-color);
     border-radius: 15px;
-    /* border-bottom: 5px solid #691150; */
 }
 
 .table-container2 .crypto-table2 .table-layout1{
@@ -145,12 +138,12 @@ ul {
     padding-left:40px; 
     border-bottom: 5px solid #691150;
     margin-top: 20px;
+     background: var(--light-color);
 }
 
 
 .table-container2 .table-layout2  .coin2{
     border-bottom: 5px solid #691150;
-    border-radius: 20px;
 }
 .table-container2 .table-layout2 .coin2 img{
     width: 40px;
