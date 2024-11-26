@@ -144,6 +144,9 @@ ul {
 
 .table-container2 .table-layout2  .coin2{
     border-bottom: 5px solid #691150;
+    padding-left: 6px;
+    background: #f4f4f4;
+    
 }
 .table-container2 .table-layout2 .coin2 img{
     width: 40px;
