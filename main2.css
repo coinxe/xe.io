@@ -1098,8 +1098,9 @@ details>.flex button i{
 }
 .margin-container .margin:nth-child(2){
     padding-top: 50px;
+    font-size: 18px;
+    font-size: bolder;
 }
-
 
 .margin-container .margin img{
     width: 50%;
