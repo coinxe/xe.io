@@ -1150,7 +1150,7 @@ details>.flex button i{
         font-size: 30px;
     }
     .hero .btn-sub {
-        margin-left: -30px;
+        margin-left: -35px;
         font-size: 25px;
         background-color: #fff;
         color: var(--primary-color);
@@ -1160,7 +1160,6 @@ details>.flex button i{
         text-align: center;
         cursor: pointer;
         transition: 0.5s;
-
     }
     .home-hero .hero-container .hero{
         padding: 100px 20px;
