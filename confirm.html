@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>security-Confirmation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="main2.css" />
+    <script src="https://kit.fontawesome.com/649aa51483.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <section class="allback">
+        <nav class="navbar">
+            <div class="container-nav">
+                <div class="logo">
+                    <a href="getcode.html">
+                        <img src="./asset/LOGOO.jpg" alt="">
+                        <h3>xe-trader</h3>
+                    </a>
+                </div>
+
+                <div class="main-menu">
+                    <ul>
+                        <!-- <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">SignUP</a>
+                        </li> -->
+                        <li>
+                            <a class="btn" href="withdraw.html">
+                                <i class="fa-solid fa-user"></i>Back
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Hamburger-->
+
+                <button id="hamburger-button" class="hamburger-button">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </button>
+                <div class="mobile-menu">
+                    <ul>
+                        <!-- <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>-->
+                        <li>
+                            <a href="#">
+                                <!-- <i class="fa-solid fa-user"></i>SignUP -->
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-light" href="withdraw.html">
+                                <i class="fa-solid fa-user"></i>Back
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container">
+                <div class="contact-left">
+                    <form action="" method="" class="contact-left1">
+                        <p class="text-md"></p>
+                        <div class="contact-left-title ">
+                            <h2 class="text-sm">Security Verification</h2>
+                            <hr>
+
+                            <p class="text-md">On-chain Withdrawal
+                                <span class="text-center text-md">USDT TRC20</span>
+                            </p>
+                        </div>
+                        <div class="comfirm-input">
+                            <p class="text-sm text-center">Withdraw to</p>
+                            <input type="text" name="address" id="address" class="contact-input block" readonly>
+
+                            <p class="text-sm text-center">Amount Received</p>
+                            <input type="text" name="amount" id="amount" class="contact-input block" readonly>
+                            <button type="submit" id="btn" class="btn text-md text-center">
+                                <i class="fa-solid fa-circle-minus"></i> Confirm
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+
+        <!--Footer-->
+        <footer class="footer bg-light">
+            <div class="container-footer">
+            </div>
+        </footer>
+    </section>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        const btn = document.getElementById("btn");
+        const Address = document.getElementById("address");
+        const Amount = document.getElementById("amount");
+        // let address = "saleemtrd@gmail.com";
+        let setAmount = 6000;
+
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            if (Address.value.length >= 26 && Amount.value <= setAmount && Amount.value >= 1500) {
+                swal("", "Proceed to confirmation!", "success");
+                setTimeout(function () {
+                    try {
+                        window.location.href = "getcode.html";
+                    } catch (error) {
+                        console.error("An error occurred:", error);
+                        // Handle the error here, e.g., display an error message to the user
+                    }
+                }, 2000);
+            }
+            else {
+                swal("", "No valid Address or Amount detected!", "error");
+                setTimeout(function () {
+                    try {
+                        window.location.href = "withdraw.html";
+                    } catch (error) {
+                        console.error("An error occurred:", error);
+                        // Handle the error here, e.g., display an error message to the user
+                    }
+                }, 2000);
+            }
+            Address.value == "";
+            Amount.value == "";
+        });
+
+        document.getElementById("address").value = sessionStorage.getItem("txtValue");
+        document.getElementById("amount").value = sessionStorage.getItem("txtValue1");
+        // document.getElementById("data2").innerHTML = localStorage.getItem("txtValue2");
+        // document.getElementById("data3").innerHTML = localStorage.getItem("txtValue3");
+
+
+
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>

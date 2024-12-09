@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="main2.css" />
+    <script src="https://kit.fontawesome.com/649aa51483.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <section class="allback">
+        <nav class="navbar navigation">
+            <div class="container-nav">
+                <div class="logo">
+                    <a href="dashboard.html">
+                        <img src="./asset/LOGOO.jpg" alt="">
+                        <h3>xe-trader</h3>
+                    </a>
+                </div>
+
+                <div class="main-menu">
+                    <ul>
+                        <!-- <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">SignUP</a>
+                        </li> -->
+                        <li>
+                            <a class="btn" href="dashboard.html">
+                                <i class="fa-solid fa-square-poll-vertical"></i>Assets
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-light" href="history.html">
+                                <i class="fa-solid fa-clock-rotate-left"></i>History
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Hamburger-->
+
+                <button id="hamburger-button" class="hamburger-button">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </button>
+                <div class="mobile-menu">
+                    <ul>
+                        <!-- <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>-->
+
+                        <li>
+                            <a class="btn button-btn btn-light" href="dashboard.html">
+                                <i class="fa-solid fa-square-poll-vertical"></i>Assets
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-light" href="history.html">
+                                <i class="fa-solid fa-clock-rotate-left"></i>History
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="main-user">
+                <div class="user-container">
+                    <div class="user flex text-center">
+                        <img src="./asset/waseem.jpg" alt="">
+                        <span>
+                            <h2 class="text-md">lar****@*****</h2>
+                            <span class="flex">
+                                <p class="text-sm">UID: 0878764</p>
+                                <p class="text-md deposit">verified</p>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div id="main-deposit">
+                <div id="deposit-container">
+                    <h2 class="text-sm">Deposit Assets</h2>
+                    <hr>
+                    <div class="body" id="body__wrapper">
+                        <div class="page__wrapper">
+                            <div class="accordion">
+                                <details>
+                                    <summary>BITCOIN</summary>
+                                    <p>BITCOIN NETWORK</p>
+                                    <p class="flex">
+                                        <input type="text" value="wsedrftgyhujikolpmnbvfcdsewxazsedrfg" id="BTC"
+                                            readonly>
+                                        <button onclick="copyText()">
+                                            <i class="fa-solid fa-copy"></i>
+                                        </button>
+                                        <span id="btc"></span>
+                                    </p>
+                                </details>
+                                <details>
+                                    <summary>ETHEREUM</summary>
+                                    <p>ERC20</p>
+                                    <p class="flex">
+                                        <input type="text" value="wsedrftgyhujikolpmnbvfcdsewxazsedrfg" id="ETH"
+                                            readonly>
+                                        <button onclick="copyText1()">
+                                            <i class="fa-solid fa-copy"></i>
+                                        </button>
+                                        <span id="eth"></span>
+                                    </p>
+                                </details>
+                                <details>
+                                    <summary>BINANCE COIN (BNB)</summary>
+                                    <p>BNB</p>
+                                    <p class="flex">
+                                        <input type="text" value="wsedrftgyhujikolpmnbvfcdsewxazsedrfg" id="BNB"
+                                            readonly>
+                                        <button onclick="copyText2()">
+                                            <i class="fa-solid fa-copy"></i>
+                                        </button>
+                                        <span id="bnb"></span>
+                                    </p>
+                                </details>
+                                <details>
+                                    <summary>TETHER (USDT)</summary>
+                                    <p>TRC20</p>
+                                    <p class="flex">
+                                        <input type="text" value="wsedrftgyhujikolpmnbvfcdsewxazsedrfg" id="USDT"
+                                            readonly>
+                                        <button onclick="copyText3()">
+                                            <i class="fa-solid fa-copy"></i>
+                                        </button>
+                                        <span id="usdt"></span>
+                                    </p>
+                                </details>
+                                <details>
+                                    <summary> SOLANA(SOL)</summary>
+                                    <p>SOL</p>
+                                    <p class="flex">
+                                        <input type="text" value="wsedrftgyhujikolpmnbvfcdsewxazsedrfg" id="SOL"
+                                            readonly>
+                                        <button onclick="copyText4()">
+                                            <i class="fa-solid fa-copy"></i>
+                                        </button>
+                                        <span id="sol"></span>
+                                    </p>
+                                </details>
+                                <details>
+                                    <summary>ALGORAND (ALGO)</summary>
+                                    <p>ALGO</p>
+                                    <p class="flex">
+                                        <input type="text" value="wsedrftgyhujikolpmnbvfcdsewxazsedrfg" id="ALGO"
+                                            readonly>
+                                        <button onclick="copyText5()">
+                                            <i class="fa-solid fa-copy"></i>
+                                        </button>
+                                        <span id="algo"></span>
+                                    </p>
+                                </details>
+                                <details>
+                                    <summary>RIPPLE (XRP)</summary>
+                                    <p>XRP</p>
+                                    <p class="flex">
+                                        <input type="text" value="wsedrftgyhujikolpmnbvfcdsewxazsedrfg" id="XRP"
+                                            readonly>
+                                        <button onclick="copyText6()">
+                                            <i class="fa-solid fa-copy"></i>
+                                        </button>
+                                        <span id="xrp"></span>
+                                    </p>
+                                </details>
+                                <details>
+                                    <summary>TRON (TRX)</summary>
+                                    <p>TRC20</p>
+                                    <p class="flex">
+                                        <input type="text" value="wsedrftgyhujikolpmnbvfcdsewxazsedrfg" id="TRX"
+                                            readonly>
+                                        <button onclick="copyText7()">
+                                            <i class="fa-solid fa-copy"></i>
+                                        </button>
+                                        <span id="trx"></span>
+                                    </p>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </main>
+
+
+        <!--Footer-->
+        <footer class="footer2 bg-light">
+            <div class="container-footer">
+                <section>
+                    <div class="flex button-btn">
+                        <ul class="flex">
+                            <li>
+                                <a class="btn btn-light" href="deposit.html">
+                                    <i class="fa-solid fa-circle-plus"></i>Deposit
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-light" href="withdraw.html">
+                                    <i class="fa-solid fa-circle-minus"></i>Withdraw
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </section>
+            </div>
+        </footer>
+    </section>
+    <script>
+        function copyText() {
+            let copyBtc =
+                document.getElementById("BTC");
+
+            copyBtc.innerText;
+            document.execCommand("copy");
+
+            document.getElementById("btc")
+                .innerHTML = "Copied";
+        }
+
+        function copyText1() {
+            let copyEth =
+                document.getElementById("ETH");
+
+            copyEth.innerText;
+            document.execCommand("copy");
+
+            document.getElementById("eth")
+                .innerHTML = "Copied";
+        }
+
+        function copyText2() {
+            let copyBnb =
+                document.getElementById("BNB");
+
+            copyBnb.innerText;
+            document.execCommand("copy");
+
+            document.getElementById("bnb")
+                .innerHTML = "Copied";
+        }
+
+        function copyText3() {
+            let copyUsdt =
+                document.getElementById("USDT");
+
+            copyUsdt.innerText;
+            document.execCommand("copy");
+
+            document.getElementById("usdt")
+                .innerHTML = "Copied";
+        }
+
+        function copyText4() {
+            let copySol =
+                document.getElementById("SOL");
+
+            copySol.innerText;
+            document.execCommand("copy");
+
+            document.getElementById("sol")
+                .innerHTML = "Copied";
+        }
+        function copyText5() {
+            let copyAlgo =
+                document.getElementById("ALGO");
+
+            copyAlgo.innerText;
+            document.execCommand("copy");
+
+            document.getElementById("algo")
+                .innerHTML = "Copied";
+        }
+        function copyText6() {
+            let copyXrp =
+                document.getElementById("XRP");
+
+            copyXrp.innerText;
+            document.execCommand("copy");
+
+            document.getElementById("xrp")
+                .innerHTML = "Copied";
+        }
+        function copyText7() {
+            let copyTrx =
+                document.getElementById("TRX");
+
+            copyTrx.innerText;
+            document.execCommand("copy");
+
+            document.getElementById("trx")
+                .innerHTML = "Copied";
+        } 
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>

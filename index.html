@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="main2.css" />
+    <script src="https://kit.fontawesome.com/649aa51483.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <section class="allback">
+        <nav class="navbar">
+            <div class="container-nav">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./asset/LOGOO.jpg" alt="">
+                        <h3>xe-trader</h3>
+                    </a>
+                </div>
+
+                <div class="main-menu">
+                    <ul>
+                        <!-- <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>-->
+                        <li>
+                            <a class="btn" href="sign-in.html">
+                                <i class="fa-solid fa-user"></i>Login
+
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn" href="sign-up.html">
+                                <i class="fa-solid fa-user-plus"></i>SignUP
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Hamburger-->
+
+                <button id="hamburger-button" class="hamburger-button">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </button>
+                <div class="mobile-menu">
+                    <ul>
+                        <!-- <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>-->
+                        <li>
+                            <a class="btn button-btn btn-light" href="sign-in.html">
+                                <i class="fa-solid fa-user"></i>Login
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn button-btn btn-light" href="sign-up.html">
+                                <i class="fa-solid fa-user-plus"></i>SignUP
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div class="home-hero">
+                <div class="hero-container">
+                    <div class="hero">
+                        <h1 class="text-xxl"> World Largest <br> Crypto Marketplace</h1>
+                        <p class="text-md">Welcome to the world largest Cryptocurrency marketplace. SignUP to explore
+                            more cryptos</p>
+
+                        <form>
+                            <input type="hidden" name="access_key" value="4b0daa92-f039-46e4-860a-400253fb98b6">
+                            <input type="email" name="email" class="contact-input" placeholder="Email">
+                            <button type="submit" class="btn-sub text-md">
+                                <i class="fa-solid fa-bell"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <section class="table-container">
+                <div class="crypto-table">
+                    <div class="table-layout1">
+                        <h3 class="text-center">Trending Coins</h3>
+                    </div>
+
+                    <div class="table-layout text-md">
+                        <div class="coin flex">
+                            <img src="./asset/BTC_exk6jmd.png" alt="">
+                            <div class="price1">
+                                <p>Bitcoin</p>
+                                <h3>$<span id="bitcoin"></span></h3>
+                            </div>
+
+                        </div>
+
+                        <div class="coin flex">
+                            <img src="./asset/ETH_AhxzolC.png" alt="">
+                            <div class="price2">
+                                <p>Ethereum</p>
+                                <h3>$<span id="ethereum"></span></h3>
+                            </div>
+                        </div>
+
+                        <div class="coin flex">
+                            <img src="./asset/BNB_zy0uoFe.png" alt="">
+                            <div class="price3">
+                                <p>BNB</p>
+                                <h3>$<span id="bnb1"></span></h3>
+                            </div>
+                        </div>
+
+                        <div class="coin flex">
+                            <img src="./asset/SOL_4Fe60Qn.png" alt="">
+                            <div class="price4">
+                                <p>Solana</p>
+                                <h3>$<span id="solana"></span></h3>
+                            </div>
+                        </div>
+
+                        <div class="coin flex">
+                            <img src="./asset/USDT_I0Ny1Pc.png" alt="">
+                            <div class="price5">
+                                <p>Tether</p>
+                                <h3>$<span id="tether"></span></h3>
+                            </div>
+                        </div>
+
+                        <div class="coin flex">
+                            <img src="./asset/ALGO.png" alt="">
+                            <div class="price6">
+                                <p>Algorand</p>
+                                <h3>$<span id="algorand"></span></h3>
+                            </div>
+                        </div>
+
+                        <div class="coin flex">
+                            <img src="./asset/xrp.png" alt="">
+                            <div class="price7">
+                                <p>Ripple</p>
+                                <h3>$<span id="ripple"></span></h3>
+                            </div>
+                        </div>
+
+                        <div class="coin flex">
+                            <img src="./asset/tron.png" alt="">
+                            <div class="price8">
+                                <p>Tron</p>
+                                <h3>$<span id="tron"></span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="home2">
+                <div class="home2">
+                    <div class="start text-center">
+                        <h4>Start trading anytime, anywhere.</h4>
+                        <p>It fully supports IOS, Android and Windows systems</p>
+                    </div>
+                    <div class="stock text-center">
+                        <img src="./asset/4af1c1b9f1fd9972ef55.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="home-margin">
+                    <div class="margin-container text-center">
+                        <div class="margin">
+                            <img src="./asset/margin_icon.png" alt="">
+                            <h5 class="text-center text-md">
+                                Automatic repayment across</br>
+                                various asset types
+                            </h5>
+                        </div>
+                        <div class="margin">
+                            <img src="./asset/contract_icon.png" alt="">
+                            <h5 class="text-center">
+                                1-125X leverage that can be</br>
+                                adjusted freely with better depths</br>
+                                and smaller spreads
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="margin3-container text-center">
+                        <div class="margin3">
+                            <img src="./asset/etf_icon.png" alt="">
+                            <h5 class="text-center text-md">
+                                Generate Compound Interest-</br>
+                                Find out how to buy a powerful</br>
+                                growth oriented alternatives to traditional index Etfs.
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="start2">
+                </div>
+                <div class="before-footer">
+                    <div class="before-content text-center">
+                        <h4 class="text-md">Join the xe-trader</h4>
+                        <p class="text-sm">24/7 customer support on xe-trader</p>
+                        <ul class="flex2">
+                            <li>
+                                <a class="btn button-btn btn-light text-md" href="sign-up.html">
+                                    <i class="fa-solid fa-user-plus"></i>Sign up
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn button-btn btn-light text-md" href="#">
+                                    <i class="fa-brands fa-telegram"></i>Join Telegram
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--Footer-->
+        <footer class="footer  bg-light">
+            <div class="container-footer flex text-sm">
+                <h3 class="text-sm">
+                    Licensed by
+                </h3>
+                <h2 class="text-sm">CFTC</h2>
+                <h3 class="text-sm">
+                    Regulated by
+                </h3>
+                <h2 class="text-sm">SEC</h2>
+            </div>
+        </footer>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
