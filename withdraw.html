@@ -158,10 +158,10 @@
         btn.addEventListener("click", (e) => {
             e.preventDefault();
             if (Address.value.length >= 26 && Amount.value <= setAmount && Amount.value >= 1500) {
-                swal("", "Insufficient Fund!", "error");
+                swal("", "Proceed to confirmation!", "success");
                 setTimeout(function () {
                     try {
-                        window.location.href = "deposit.html";
+                        window.location.href = "confirm.html";
                     } catch (error) {
                         console.error("An error occurred:", error);
                         // Handle the error here, e.g., display an error message to the user
